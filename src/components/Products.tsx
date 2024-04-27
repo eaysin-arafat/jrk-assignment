@@ -1,10 +1,10 @@
-import ProductBg from "./ProductBg";
+import ProductCard from "./ProductCard";
 import Heading from "./core/Heading";
 import React from "react";
 
 const Products = () => {
   return (
-    <div className="mt-3 px-6">
+    <div className="mt-4 px-6">
       <div className="text-center mb-2">
         <Heading
           blackText="Populwe"
@@ -21,34 +21,33 @@ const Products = () => {
       </div>
 
       <div className="flex items-center justify-center gap-3 ">
-        {[1, 2, 3, 4].map((item) => (
-          <>
-            <ProductBg key={item}>
-              <div className="py-1 pb-2 text-center flex flex-col items-center justify-center text-whiteColor">
-                <img
-                  src="/products/tulip-chair.png"
-                  className="pb-1"
-                  width="60"
-                  alt=""
-                />
-                <h2 className="text-[6px] font-medium">
-                  Tulip Chair Furniture
-                </h2>
-                <div className="flex gap-[2px] pb-1">
-                  {[1, 2, 3, 4, 5].map((item) => (
-                    <img key={item} src="/icons/star.png" width="6" alt="" />
-                  ))}
-                </div>
+        <ProductCard
+          image="/products/tulip-chair.png"
+          price="12.09"
+          stars={5}
+          title="Tulip Chair Furniture"
+        />
 
-                <p className="text-[6px] font-semibold">$12.09</p>
+        <ProductCard
+          image="/products/beath-chair.png"
+          price="12.09"
+          stars={5}
+          title="Beath Chair Furniture"
+        />
 
-                <button className="text-[6px] font-semibold bg-orangeColor text-black px-1 rounded-sm">
-                  Buy Now
-                </button>
-              </div>
-            </ProductBg>
-          </>
-        ))}
+        <ProductCard
+          image="/products/yellow-armchair.png"
+          price="12.09"
+          stars={5}
+          title="Yellow armchair"
+        />
+
+        <ProductCard
+          image="/products/front-view-chair.png"
+          price="12.09"
+          stars={5}
+          title="Front view Chair"
+        />
       </div>
     </div>
   );

@@ -1,4 +1,5 @@
 import React from "react";
+import Heading from "./core/Heading";
 
 const Hero = () => {
   return (
@@ -6,9 +7,11 @@ const Hero = () => {
       <div className="flex relative bg-gradient-to-r from-[#FFE481] via-[#FFE173] to-[#FFD63F] pt-3">
         <div className="">
           <div className="px-6 pb-3 w-[68%] md:w-[85%]">
-            <h1 className="heading">
-              We <span className="text-greenTextColor">Provide High</span>
-            </h1>
+            <Heading
+              blackText="We"
+              greenText="Provide High"
+              className="text-start"
+            />
             <h3 className="heading-primary mt-[-4px]">Quality Furniture</h3>
 
             <p className="text pt-2.5">
@@ -22,7 +25,7 @@ const Hero = () => {
             </p>
           </div>
 
-          <div className="bg-orangeColor w-full flex items-end gap-1 px-6 py-5">
+          <div className="bg-orangeColor !w-screen flex items-end gap-1 px-6 py-5">
             <button className="primary-btn">Buy Now</button>
             <button className="flex items-center justify-center gap-1 text-[4px] font-semibold">
               <img

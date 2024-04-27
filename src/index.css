@@ -35,6 +35,11 @@ body {
   box-shadow: 0px 2px 15px 0px #719d18 inset;
 }
 
+.product-image {
+  height: 60px;
+  width: 75px;
+}
+
 @layer components {
   .heading {
     @apply text-[15px] font-semibold;
