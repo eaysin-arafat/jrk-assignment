@@ -13,15 +13,15 @@ const Thumbnail = () => {
           image={{
             alt: "big sail",
             url: "/public/thumbnail/big-sail.png",
-            width: "160",
+            width: "140",
           }}
           height="h-[140px]"
-          childrenClassName="pt-2"
+          childrenClassName="pt-2 pr-6"
         >
           <>
-            <h3 className="font-italianno text-[12px]">Furniture</h3>
-            <h2 className="font-italianno text-[16px]">Big Sale</h2>
-            <button className="inner-shadow-thamnail text-[5px] font-semibold px-2 py-1 rounded-full">
+            <h3 className="font-italianno text-[12px] pr-5">Furniture</h3>
+            <h2 className="font-italianno text-[18px] mt-[-6px]">Big Sale</h2>
+            <button className="inner-shadow-thamnail text-[5px] font-semibold px-2 pt-[3px] py-[2px] rounded-full">
               Order Now
             </button>
           </>
@@ -34,14 +34,15 @@ const Thumbnail = () => {
             primaryColor: "bg-[#FFCDA7] pt-[7px]",
             secondColor: "bg-[#EEA874]",
           }}
+          primaryColorWidth="w-[25%]"
           image={{
             alt: "big sail",
             url: "/public/thumbnail/big-sail.png",
             width: "70",
-            imageClassName: "!bottom-1 ml-6",
+            imageClassName: "!bottom-1 ml-2",
           }}
           height="h-[65px]"
-          childrenClassName="!text-center ml-3 pt-1"
+          childrenClassName="!text-center ml-3 pl-9 pt-1 w-[75%]"
         >
           <>
             <h3 className="font-italianno text-[8px]">Furniture</h3>
@@ -61,8 +62,8 @@ const Thumbnail = () => {
             image={{
               alt: "big sail",
               url: "/public/thumbnail/home-confort.png",
-              width: "120",
-              imageClassName: "!bottom-[2px] ml-[15px] items-center",
+              width: "90",
+              imageClassName: "!bottom-[2px] ml-[5px] items-center",
             }}
             primaryColorWidth="w-[50%]"
             childrenClassName="!pt-1"
