@@ -13,9 +13,9 @@ const HeroProductCard = ({
   return (
     <div className="bg-gradient-to-b from-[#BDEFDE] to-[#70CEB1] px-2 pt-2 rounded-xl flex flex-col items-center justify-between">
       <img
-        style={{ height: "30px", width: "50px" }}
+        style={{ height: w768 ? "18px" : "70px" }}
         src={image}
-        width={w768 ? "40" : w1024 ? "80" : "90"}
+        width={w768 ? "30" : w1024 ? "70" : "80"}
         className="flex items-center justify-end"
         alt=""
       />

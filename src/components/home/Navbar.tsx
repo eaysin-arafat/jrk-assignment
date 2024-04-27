@@ -14,7 +14,7 @@ const Navbar = () => {
       />
 
       <div className="flex items-center gap-2.5 md:gap-5">
-        <ul className="flex items-center justify-center gap-2 md:gap-5 capitalize font-medium heading-primary">
+        <ul className="flex items-center justify-center gap-2 md:gap-5 capitalize font-medium text-[7px] md:text-[9px] lg:text-[11px]">
           <li>Home</li>
           <li>Products</li>
           <li>Service</li>
@@ -26,7 +26,7 @@ const Navbar = () => {
         <div className="relative">
           <img
             src="/icons/dalibary.png"
-            width={w768 ? "13" : w1024 ? "15" : "23"}
+            width={w768 ? "13" : w1024 ? "13" : "17"}
             alt=""
           />
           <span className="absolute top-0 right-0 h-1.5 w-1.5 bg-greenBgColor rounded-full text-white text-[4px] flex items-center justify-center">

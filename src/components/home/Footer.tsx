@@ -36,7 +36,9 @@ const Footer = () => {
       </div>
 
       <div className="flex flex-col items-center justify-center gap-1 mt-2">
-        <h2 className="font-medium uppercase text-center">Follow us</h2>
+        <h2 className="font-medium uppercase text-center text-[8px] md:text-[10px] lg:text-[12px]">
+          Follow us
+        </h2>
         <ul className="flex gap-1.5">
           <SocialIcon
             icon="/icons/social-accounts/facebook.png"

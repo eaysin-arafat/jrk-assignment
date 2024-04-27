@@ -37,7 +37,7 @@ const Hero = () => {
               <img
                 src="/icons/redirect.png"
                 className="text-whiteColor bg-whiteColor p-[1px] rounded-sm"
-                // width={w768 ? "7" : "10"}
+                width={w768 ? "7" : "10"}
                 alt=""
               />
               All Product
@@ -55,7 +55,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="flex items-center justify-center gap-3 mt-[-32px] transform">
+      <div className="flex items-center justify-center gap-2 mt-[-32px] transform">
         <HeroProductCard title="Sofa" image="/hero/sofa.png" />
 
         <HeroProductCard title="Chair" image="/hero/chair.png" />

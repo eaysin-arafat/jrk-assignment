@@ -16,11 +16,11 @@ const Thumbnail = () => {
           image={{
             alt: "big sail",
             url: "/public/thumbnail/big-sail.png",
-            width: w768 ? "140" : w1024 ? "200" : "220",
-            imageClassName: "ml-8 lg:ml-10",
+            width: w768 ? "120" : w1024 ? "180" : "200",
+            imageClassName: "ml-1 md:ml-8 lg:ml-10",
           }}
           height="h-[140px] md:h-[160px] lg:h-[200px]"
-          childrenClassName="pt-2 lg:pt-5 pr-10 md:pr-16"
+          childrenClassName="pt-2 lg:pt-5 pr-7 md:pr-16"
         >
           <>
             <h3 className="font-italianno text-[12px] md:text-[20px] lg:text-[30px] pr-5 md:pr-9">
@@ -72,7 +72,7 @@ const Thumbnail = () => {
             image={{
               alt: "big sail",
               url: "/public/thumbnail/home-confort.png",
-              width: w768 ? "90" : w1024 ? "110" : "130",
+              width: w768 ? "70" : w1024 ? "90" : "120",
               imageClassName: "!bottom-[2px] md:ml-[30px] items-center",
             }}
             primaryColorWidth="w-[50%]"
@@ -80,7 +80,7 @@ const Thumbnail = () => {
             height="h-[65px] md:h-[75px] lg:h-[95px]"
           >
             <>
-              <h3 className="font-italianno md:text-[15px] lg:text-[20px]">
+              <h3 className="font-italianno text-[10px] md:text-[15px] lg:text-[20px]">
                 Home Comfort
               </h3>
               <button className="inner-shadow-thamnail-comfort thamnail-btn">
