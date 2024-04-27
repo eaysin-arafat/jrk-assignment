@@ -4,7 +4,7 @@ import Navbar from "./components/home/Navbar";
 
 function App() {
   return (
-    <div className="overflow-y-hidden">
+    <div>
       <Navbar />
       <Main />
       <Footer />

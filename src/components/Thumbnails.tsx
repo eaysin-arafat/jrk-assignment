@@ -6,7 +6,7 @@ const Thumbnail = () => {
   const w768 = useWindow(768);
 
   return (
-    <div className="flex gap-2 items-center mt-4 px-6 lg:px-36">
+    <div className="flex gap-2 items-center mt-6 px-6 lg:px-36">
       <div className="w-[60%]">
         <ThumbnailSingle
           color={{
