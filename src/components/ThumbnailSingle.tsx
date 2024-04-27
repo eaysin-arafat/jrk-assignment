@@ -2,7 +2,13 @@ import { ReactNode } from "react";
 
 type Props = {
   color: { primaryColor: string; secondColor: string };
-  image: { alt: string; width: string; url: string; imageClassName?: string };
+  image: {
+    alt: string;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    width: any;
+    url: string;
+    imageClassName?: string;
+  };
   height?: string;
   primaryColorWidth?: string;
   childrenClassName?: string;

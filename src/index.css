@@ -42,26 +42,54 @@ body {
 
 @layer components {
   .heading {
-    @apply text-[15px] font-semibold;
+    @apply text-[15px] md:text-[18px] lg:text-[20px] font-semibold;
   }
 
   .heading-primary {
-    @apply text-[12px] font-medium;
+    @apply text-[12px] md:text-[15px] lg:text-[17px] font-medium;
   }
 
   .text {
-    @apply text-[5px];
+    @apply text-[5px] md:text-[9px] lg:text-[11px];
   }
 
   .primary-btn {
-    @apply bg-greenBgColor text-whiteColor px-1 py-[2px] rounded-sm text-[4px] font-semibold inner-shadow;
+    @apply bg-greenBgColor text-whiteColor px-1 py-[2px] rounded-sm text-[4px] md:text-[7px] lg:text-[9px] font-semibold inner-shadow;
   }
 
   .footerOptionLine {
-    @apply w-[1px] h-[6px] bg-whiteColor;
+    @apply w-[1px] h-[6px] md:h-[8px] lg:h-[10px] bg-whiteColor;
   }
 
   .thamnail-btn {
-    @apply font-semibold text-[3px] px-[4px] pt-[2px] py-[1px] rounded-full transform translate-y-[-9px];
+    @apply font-semibold text-[3px] md:text-[5px] lg:text-[7px] px-[4px] md:px-[6px] pt-[4px] md:pt-[2px] py-[1px] rounded-full transform translate-y-[-9px];
+  }
+}
+
+@media (min-width: 768px) {
+  .product-image {
+    height: 150px; /* Adjust height for 768px screen width */
+    width: 250px; /* Adjust width for 768px screen width */
+  }
+}
+
+@media (min-width: 1024px) {
+  .product-image {
+    height: 150; /* Adjust height for 1024px screen width */
+    width: 250; /* Adjust width for 1024px screen width */
+  }
+}
+
+@media (min-width: 1280px) {
+  .product-image {
+    height: 150; /* Adjust height for 1024px screen width */
+    width: 230; /* Adjust width for 1024px screen width */
+  }
+}
+
+@media (min-width: 1536px) {
+  .product-image {
+    height: 150; /* Adjust height for 1024px screen width */
+    width: 230; /* Adjust width for 1024px screen width */
   }
 }

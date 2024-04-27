@@ -3,8 +3,8 @@ import Heading from "./core/Heading";
 
 const Products = () => {
   return (
-    <div className="mt-4 px-6">
-      <div className="text-center mb-2">
+    <div className="mt-4 px-6 lg:px-36">
+      <div className="text-center mb-2 lg:my-8">
         <Heading
           blackText="Populwe"
           greenText="We Have"
@@ -19,7 +19,7 @@ const Products = () => {
         </p>
       </div>
 
-      <div className="flex items-center justify-center gap-3 ">
+      <div className="flex items-center justify-between gap-3 ">
         <ProductCard
           image="/products/tulip-chair.png"
           price="12.09"

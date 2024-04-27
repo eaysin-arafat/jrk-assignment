@@ -4,11 +4,11 @@ import Navbar from "./components/home/Navbar";
 
 function App() {
   return (
-    <>
+    <div className="overflow-y-hidden">
       <Navbar />
       <Main />
       <Footer />
-    </>
+    </div>
   );
 }
 

@@ -1,11 +1,18 @@
+import useWindow from "../hooks/useWindow";
+import HeroProductCard from "./HeroProductCard";
 import Heading from "./core/Heading";
 
 const Hero = () => {
+  const w1024 = useWindow(1024);
+  const w768 = useWindow(768);
+
+  console.log(w1024);
+
   return (
     <div>
       <div className="flex relative bg-gradient-to-r from-[#FFE481] via-[#FFE173] to-[#FFD63F] pt-3">
         <div className="">
-          <div className="px-6 pb-3 w-[68%] md:w-[85%]">
+          <div className="px-6 lg:px-36 pb-3 w-[68%] md:w-[75%]">
             <Heading
               blackText="We"
               greenText="Provide High"
@@ -24,13 +31,13 @@ const Hero = () => {
             </p>
           </div>
 
-          <div className="bg-orangeColor !w-screen flex items-end gap-1 px-6 py-5">
+          <div className="bg-orangeColor !w-screen flex items-center gap-1 md:gap-2 px-6 lg:px-36 py-5">
             <button className="primary-btn">Buy Now</button>
-            <button className="flex items-center justify-center gap-1 text-[4px] font-semibold">
+            <button className="flex items-center justify-center gap-1  text font-semibold">
               <img
                 src="/icons/redirect.png"
                 className="text-whiteColor bg-whiteColor p-[1px] rounded-sm"
-                width="7"
+                // width={w768 ? "7" : "10"}
                 alt=""
               />
               All Product
@@ -40,29 +47,20 @@ const Hero = () => {
 
         <div>
           <img
-            className="absolute top-0 right-6"
+            className="absolute top-0 right-6 lg:right-36"
             src="/hero/hero-bg.png"
-            width="110"
+            width={w768 ? "110" : w1024 ? "130" : "150"}
             alt=""
           />
         </div>
       </div>
 
       <div className="flex items-center justify-center gap-3 mt-[-32px] transform">
-        {[1, 2, 3].map((item) => (
-          <div
-            key={item}
-            className="bg-gradient-to-b from-[#BDEFDE] to-[#70CEB1] px-2 pt-2 rounded-xl flex flex-col items-center justify-between"
-          >
-            <img
-              src="/hero/sofa.png"
-              width="40"
-              className="flex items-center justify-end"
-              alt=""
-            />
-            <p className="text-[8px] font-medium pt-1.5 pb-1">Sofa</p>
-          </div>
-        ))}
+        <HeroProductCard title="Sofa" image="/hero/sofa.png" />
+
+        <HeroProductCard title="Chair" image="/hero/chair.png" />
+
+        <HeroProductCard title="Bed" image="/hero/bed.png" />
       </div>
     </div>
   );
