@@ -12,7 +12,7 @@ const Hero = () => {
     <div>
       <div className="flex relative bg-gradient-to-r from-[#FFE481] via-[#FFE173] to-[#FFD63F] pt-3">
         <div className="">
-          <div className="px-6 lg:px-36 pb-3 w-[68%] md:w-[75%]">
+          <div className="px-6 lg:px-36 pb-3 w-[68%] md:w-[75%] lg:py-5">
             <Heading
               blackText="We"
               greenText="Provide High"
@@ -31,7 +31,7 @@ const Hero = () => {
             </p>
           </div>
 
-          <div className="bg-orangeColor flex items-center gap-1 md:gap-2 px-6 lg:px-36 py-5">
+          <div className="bg-orangeColor flex items-center gap-1 md:gap-2 px-6 lg:px-36 py-5 lg:py-8">
             <button className="primary-btn">Buy Now</button>
             <button className="flex items-center justify-center gap-1  text font-semibold">
               <img
@@ -55,7 +55,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="flex items-center justify-center gap-2 mt-[-32px] transform">
+      <div className="flex items-center justify-center gap-2 mt-[-32px] lg:mt-[-45px] transform">
         <HeroProductCard title="Sofa" image="/hero/sofa.png" />
 
         <HeroProductCard title="Chair" image="/hero/chair.png" />

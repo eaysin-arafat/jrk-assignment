@@ -16,10 +16,10 @@ const Thumbnail = () => {
           image={{
             alt: "big sail",
             url: "/public/thumbnail/big-sail.png",
-            width: w768 ? "120" : w1024 ? "180" : "200",
+            width: w768 ? "95" : w1024 ? "180" : "200",
             imageClassName: "ml-1 md:ml-8 lg:ml-10",
           }}
-          height="h-[140px] md:h-[160px] lg:h-[200px]"
+          height="h-[110px] md:h-[160px] lg:h-[200px]"
           childrenClassName="pt-2 lg:pt-5 pr-7 md:pr-16"
         >
           <>
@@ -39,17 +39,17 @@ const Thumbnail = () => {
       <div className="w-[40%] space-y-2">
         <ThumbnailSingle
           color={{
-            primaryColor: "bg-[#FFCDA7] pt-[7px]",
+            primaryColor: "bg-[#FFCDA7] pt-[7px] lg:pt-[13px]",
             secondColor: "bg-[#EEA874]",
           }}
           primaryColorWidth="w-[25%]"
           image={{
             alt: "big sail",
             url: "/public/thumbnail/big-sail.png",
-            width: w768 ? "70" : w1024 ? "90" : "110",
+            width: w768 ? "55" : w1024 ? "90" : "110",
             imageClassName: "!bottom-1 md:ml-10",
           }}
-          height="h-[65px] md:h-[75px] lg:h-[95px]"
+          height="h-[50px] md:h-[75px] lg:h-[95px]"
           childrenClassName="!text-center ml-3 pl-9 pt-1 w-[75%]"
         >
           <>
@@ -77,7 +77,7 @@ const Thumbnail = () => {
             }}
             primaryColorWidth="w-[50%]"
             childrenClassName="!pt-1"
-            height="h-[65px] md:h-[75px] lg:h-[95px]"
+            height="h-[50px] md:h-[75px] lg:h-[95px]"
           >
             <>
               <h3 className="font-italianno text-[10px] md:text-[15px] lg:text-[20px]">

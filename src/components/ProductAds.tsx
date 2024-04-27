@@ -45,11 +45,11 @@ const ProductAds = () => {
 
         <div className="flex items-center gap-2 mt-2">
           <button className="primary-btn">Shop Now</button>
-          <button className="text flex items-center gap-[2px] ">
+          <button className="text flex items-center gap-[2px] pt-1">
             <img
               src="/icons/video-play.png"
               width={w768 ? "5" : w1024 ? "10" : "13"}
-              className="pb-[2px]"
+              className="pb-[2.5px]"
               alt=""
             />{" "}
             Watch Video
