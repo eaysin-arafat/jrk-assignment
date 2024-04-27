@@ -34,7 +34,7 @@ Start the development server:
 ```bash
 yarn dev
 ```
-This will start the Vite development server, which will automatically recompile your code as you make changes and open your project in a web browser.
+This will start the Vite development server, which will automatically recompile code as make changes and open  project in a web browser at http://localhost:5173/.
 
 ## Building
 To build an optimized production-ready version of your project:
