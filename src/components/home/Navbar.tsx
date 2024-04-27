@@ -1,5 +1,4 @@
 import useWindow from "../../hooks/useWindow";
-import React from "react";
 
 const Navbar = () => {
   const w1024 = useWindow(1024);

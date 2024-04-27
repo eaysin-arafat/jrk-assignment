@@ -1,4 +1,3 @@
-import React from "react";
 import ProductBg from "./ProductBg";
 
 type Props = {
