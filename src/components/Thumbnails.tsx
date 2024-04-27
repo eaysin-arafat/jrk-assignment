@@ -1,4 +1,5 @@
 import ThumbnailSingle from "./ThumbnailSingle";
+import React from "react";
 
 const Thumbnail = () => {
   return (

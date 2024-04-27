@@ -1,4 +1,5 @@
 import Heading from "./core/Heading";
+import React from "react";
 
 const Blog = () => {
   return (

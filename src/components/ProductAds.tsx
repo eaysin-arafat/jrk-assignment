@@ -1,4 +1,5 @@
 import ProductBg from "./ProductBg";
+import React from "react";
 
 const ProductAds = () => {
   return (
