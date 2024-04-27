@@ -14,7 +14,7 @@ Ensure you have Node.js and Yarn installed on your system. You can check the ver
 
 01. Clone this repository:
    ```bash
-   git clone https://your-github-repo-url.git
+   git clone https://github.com/eaysin-arafat/assignment.git
    ```
 02. Navigate to the project directory:
 
@@ -29,14 +29,14 @@ yarn install
 ```
 
 ## Development
-01. Start the development server:
+Start the development server:
 
 ```bash
 yarn dev
 ```
 This will start the Vite development server, which will automatically recompile your code as you make changes and open your project in a web browser.
 
-Building
+## Building
 To build an optimized production-ready version of your project:
 
 ```bash
@@ -44,7 +44,7 @@ yarn build
 ```
 This will create a dist folder containing the compiled application files.
 
-Linting
+## Linting
 To run code linting:
 
 ```bash
@@ -53,10 +53,13 @@ yarn lint
 This will check your code for potential errors and style issues.
 
 ## Technologies Used
-React: JavaScript library for building user interfaces.
-TypeScript: Superset of JavaScript that adds optional static typing.
-Vite: Build tool for modern web development.
-Tailwind CSS: Utility-first CSS framework for rapid UI development.
-Contributing
-This project is not currently set up for external contributions.
+- React: JavaScript library for building user interfaces.
+- TypeScript: Superset of JavaScript that adds optional static typing.
+- Vite: Build tool for modern web development.
+- Tailwind CSS: Utility-first CSS framework for rapid UI development.
+
+## Contact
+If you have any questions or suggestions, feel free to contact me at eaysin.arafat.j@gmail.com.
+
+
 
