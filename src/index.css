@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Italianno&display=swap");
+
+@font-face {
+  font-family: "Oxanium";
+  src: url("/fonts/Oxanium/Oxanium-VariableFont_wght.ttf") format("truetype"); /* Adjust path accordingly */
+}
+
+html {
+  background: var(--whiteColor) !important;
+  /* position: relative !important; */
+}
+
+body {
+  background: var(--whiteColor);
+  font-family: "Oxanium", sans-serif;
+}
+
+.inner-shadow {
+  box-shadow: 0px 2px 15px 0px #003928 inset;
+}
+
+.inner-shadow-thamnail {
+  box-shadow: 0px 2px 15px 0px #07686d inset;
+}
+
+.inner-shadow-thamnail-modern {
+  box-shadow: 0px 2px 15px 0px #ba6424 inset;
+}
+
+.inner-shadow-thamnail-comfort {
+  box-shadow: 0px 2px 15px 0px #719d18 inset;
+}
+
+@layer components {
+  .heading {
+    @apply text-[15px] font-semibold;
+  }
+
+  .heading-primary {
+    @apply text-[12px] font-medium;
+  }
+
+  .text {
+    @apply text-[5px];
+  }
+
+  .primary-btn {
+    @apply bg-greenBgColor text-whiteColor px-1 py-[2px] rounded-sm text-[4px] font-semibold inner-shadow;
+  }
+
+  .footerOptionLine {
+    @apply w-[1px] h-[6px] bg-whiteColor;
+  }
+
+  .thamnail-btn {
+    @apply font-semibold text-[3px] px-[4px] pt-1 py-[2px] rounded-full transform translate-y-[-9px];
+  }
+}
