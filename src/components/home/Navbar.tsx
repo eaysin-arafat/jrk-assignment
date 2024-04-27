@@ -4,7 +4,7 @@ import HorizontalPaddingLayout from "../../layout/HorizontalPaddingLayout";
 const Navbar = () => {
   // Using the useWindow hook to track window width breakpoints
   const w1024 = useWindow(1024); // Boolean indicating if the window width is 1024px or more
-  const w768 = useWindow(768); // Boolean indicating if the window width is 768px or more
+  const w768 = useWindow(768);
 
   return (
     <HorizontalPaddingLayout className="flex justify-between my-3">
@@ -21,6 +21,7 @@ const Navbar = () => {
           <li>Home</li>
           <li>Products</li>
           <li>Service</li>
+          {/* Navbar active link */}
           <li className="bg-greenBgColor hover:bg-[#3b6a59] px-2 rounded-full text-whiteColor py-[1px] transition-all pt-[2px]">
             Login
           </li>
