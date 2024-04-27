@@ -1,5 +1,4 @@
 import { ReactNode } from "react";
-import React from "react";
 
 type Props = {
   color: { primaryColor: string; secondColor: string };

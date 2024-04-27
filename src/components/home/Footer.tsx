@@ -2,7 +2,7 @@ import SocialIcon from "../SocialIcon";
 
 const Footer = () => {
   return (
-    <div className="bg-greenBgColor text-whiteColor py-2 pb-4 px-6">
+    <div className="bg-greenTextColor text-whiteColor py-2 pb-4 px-6">
       <ul className="flex items-center justify-center gap-1 text-[5px] font-medium">
         <li>Privacy Policy</li>
         <span className="footerOptionLine"></span>

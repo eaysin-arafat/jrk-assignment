@@ -1,5 +1,4 @@
 import ThumbnailSingle from "./ThumbnailSingle";
-import React from "react";
 
 const Thumbnail = () => {
   return (
@@ -16,7 +15,7 @@ const Thumbnail = () => {
             width: "140",
           }}
           height="h-[140px]"
-          childrenClassName="pt-2 pr-6"
+          childrenClassName="pt-2 pr-5"
         >
           <>
             <h3 className="font-italianno text-[12px] pr-5">Furniture</h3>

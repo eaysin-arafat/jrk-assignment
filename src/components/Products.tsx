@@ -1,6 +1,5 @@
 import ProductCard from "./ProductCard";
 import Heading from "./core/Heading";
-import React from "react";
 
 const Products = () => {
   return (
