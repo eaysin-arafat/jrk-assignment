@@ -1,24 +1,27 @@
+/* Importing Google Font for thamnail font style */
 @import url("https://fonts.googleapis.com/css2?family=Italianno&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Define custom font-face for Oxanium font */
 @font-face {
   font-family: "Oxanium";
   src: url("/fonts/Oxanium/Oxanium-VariableFont_wght.ttf") format("truetype"); /* Adjust path accordingly */
 }
-
+/* Apply background color to HTML */
 html {
   background: var(--whiteColor) !important;
-  /* position: relative !important; */
 }
 
+/* Apply background color and font family to body */
 body {
   background: var(--whiteColor);
   font-family: "Oxanium", sans-serif;
 }
 
+/* Custom inner shadow styles */
 .inner-shadow {
   box-shadow: 0px 2px 15px 0px #003928 inset;
 }
@@ -35,6 +38,7 @@ body {
   box-shadow: 0px 2px 15px 0px #719d18 inset;
 }
 
+/* Define styles for product image */
 .product-image {
   height: 60px;
   width: 75px;
@@ -66,30 +70,31 @@ body {
   }
 }
 
+/* Media queries for adjusting product image size */
 @media (min-width: 768px) {
   .product-image {
-    height: 150px; /* Adjust height for 768px screen width */
-    width: 250px; /* Adjust width for 768px screen width */
+    height: 150px;
+    width: 250px;
   }
 }
 
 @media (min-width: 1024px) {
   .product-image {
-    height: 150; /* Adjust height for 1024px screen width */
-    width: 250; /* Adjust width for 1024px screen width */
+    height: 150;
+    width: 250;
   }
 }
 
 @media (min-width: 1280px) {
   .product-image {
-    height: 150; /* Adjust height for 1024px screen width */
-    width: 230; /* Adjust width for 1024px screen width */
+    height: 150;
+    width: 230;
   }
 }
 
 @media (min-width: 1536px) {
   .product-image {
-    height: 150; /* Adjust height for 1024px screen width */
-    width: 230; /* Adjust width for 1024px screen width */
+    height: 150;
+    width: 230;
   }
 }
