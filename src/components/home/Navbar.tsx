@@ -21,7 +21,7 @@ const Navbar = () => {
           <li>Home</li>
           <li>Products</li>
           <li>Service</li>
-          <li className="bg-greenBgColor hover:bg-[#3b6a59] px-2.5 rounded-full text-whiteColor py-[2px] transition-all pt-[3px]">
+          <li className="bg-greenBgColor hover:bg-[#3b6a59] px-2 rounded-full text-whiteColor py-[1px] transition-all pt-[2px]">
             Login
           </li>
         </ul>
