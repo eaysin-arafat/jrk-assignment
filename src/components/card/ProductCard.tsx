@@ -12,7 +12,7 @@ const ProductCard = ({ title, image, price, stars }: Props) => {
     <>
       {/* Product background container */}
       <ProductBg>
-        <div className="py-1 pb-2 text-center flex flex-col items-center justify-center text-whiteColor">
+        <div className="py-1 pb-2 text-center flex flex-col items-center justify-center text-whiteColor lg:mb-1.5">
           {/* Product image */}
           <img src={image} className="pb-1 product-image" height="60" alt="" />
 
