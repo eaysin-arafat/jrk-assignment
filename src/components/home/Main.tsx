@@ -6,11 +6,20 @@ import Thumbnail from "../Thumbnails";
 
 const Main = () => {
   return (
-    <div className="">
+    <div>
+      {/* Render the Hero Section */}
       <Hero />
+
+      {/* Render the Products Section */}
       <Products />
+
+      {/* Render the Thumbnail Section */}
       <Thumbnail />
+
+      {/* Render the ProductAds Section */}
       <ProductAds />
+
+      {/* Render the Blog Section */}
       <Blog />
     </div>
   );

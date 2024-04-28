@@ -1,18 +1,20 @@
 import useWindow from "../hooks/useWindow";
-import HeroProductCard from "./HeroProductCard";
-import Heading from "./core/Heading";
+import HeroProductCard from "./card/HeroProductCard";
+import Heading from "./heading/Heading";
 
 const Hero = () => {
-  const w1024 = useWindow(1024);
+  // Using the useWindow hook to track window width breakpoints
+  const w1024 = useWindow(1024); // Boolean indicating if the window width is 1024px or more
   const w768 = useWindow(768);
-
-  console.log(w1024);
 
   return (
     <div>
+      {/* Hero section */}
       <div className="flex relative bg-gradient-to-r from-[#FFE481] via-[#FFE173] to-[#FFD63F] pt-3">
         <div className="">
+          {/* Text content */}
           <div className="px-6 lg:px-36 pb-3 w-[68%] md:w-[75%] lg:py-5">
+            {/* Heading */}
             <Heading
               blackText="We"
               greenText="Provide High"
@@ -20,6 +22,7 @@ const Hero = () => {
             />
             <h3 className="heading-primary mt-[-4px]">Quality Furniture</h3>
 
+            {/* Description */}
             <p className="text pt-2.5">
               Choose and buy from wide and largest sofa collection of
               Bangladesh. Regal, the most loved and selling furniture brand in
@@ -31,13 +34,14 @@ const Hero = () => {
             </p>
           </div>
 
+          {/* Buttons */}
           <div className="bg-orangeColor flex items-center gap-1 md:gap-2 px-6 lg:px-36 py-5 lg:py-8">
             <button className="primary-btn">Buy Now</button>
             <button className="flex items-center justify-center gap-1  text font-semibold">
               <img
                 src="/icons/redirect.png"
                 className="text-whiteColor bg-whiteColor p-[1px] rounded-sm"
-                width={w768 ? "7" : "10"}
+                width={w768 ? "7" : "10"} // Dynamic width based on window width
                 alt=""
               />
               All Product
@@ -45,21 +49,26 @@ const Hero = () => {
           </div>
         </div>
 
+        {/* Image */}
         <div>
           <img
             className="absolute top-0 right-6 lg:right-36"
             src="/hero/hero-bg.png"
-            width={w768 ? "110" : w1024 ? "130" : "150"}
+            width={w768 ? "110" : w1024 ? "130" : "150"} // Dynamic width based on window width
             alt=""
           />
         </div>
       </div>
 
+      {/* Product cards */}
       <div className="flex items-center justify-center gap-2 mt-[-32px] lg:mt-[-45px] transform">
+        {/* Render HeroProductCard for Sofa */}
         <HeroProductCard title="Sofa" image="/hero/sofa.png" />
 
+        {/* Render HeroProductCard for Chair */}
         <HeroProductCard title="Chair" image="/hero/chair.png" />
 
+        {/* Render HeroProductCard for Bed */}
         <HeroProductCard title="Bed" image="/hero/bed.png" />
       </div>
     </div>

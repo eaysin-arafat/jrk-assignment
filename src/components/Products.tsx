@@ -1,15 +1,16 @@
-import ProductCard from "./ProductCard";
-import Heading from "./core/Heading";
-
+import ProductCard from "./card/ProductCard";
+import Heading from "./heading/Heading";
 const Products = () => {
   return (
     <div className="mt-4 px-6 lg:px-36">
+      {/* Heading */}
       <div className="text-center mb-2 lg:my-8">
         <Heading
           blackText="Populwe"
           greenText="We Have"
           className="uppercase"
         />
+        {/* Description */}
         <p className="text">
           Furniture Concepts is a contract furniture wholesaler serving the
           needs of group living environments including Community Housing,
@@ -19,7 +20,9 @@ const Products = () => {
         </p>
       </div>
 
+      {/* Product cards */}
       <div className="flex items-center justify-between gap-3 ">
+        {/* Render ProductCard for Tulip Chair */}
         <ProductCard
           image="/products/tulip-chair.png"
           price="12.09"
@@ -27,6 +30,7 @@ const Products = () => {
           title="Tulip Chair Furniture"
         />
 
+        {/* Render ProductCard for Beath Chair */}
         <ProductCard
           image="/products/beath-chair.png"
           price="12.09"
@@ -34,6 +38,7 @@ const Products = () => {
           title="Beath Chair Furniture"
         />
 
+        {/* Render ProductCard for Yellow Armchair */}
         <ProductCard
           image="/products/yellow-armchair.png"
           price="12.09"
@@ -41,6 +46,7 @@ const Products = () => {
           title="Yellow armchair"
         />
 
+        {/* Render ProductCard for Front View Chair */}
         <ProductCard
           image="/products/front-view-chair.png"
           price="12.09"

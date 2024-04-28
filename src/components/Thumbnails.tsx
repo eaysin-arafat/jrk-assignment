@@ -1,14 +1,16 @@
 import useWindow from "../hooks/useWindow";
-import ThumbnailSingle from "./ThumbnailSingle";
+import ThumbnailCard from "./card/ThumbnailCard";
 
 const Thumbnail = () => {
+  // Using the useWindow hook to determine window size
   const w1024 = useWindow(1024);
   const w768 = useWindow(768);
 
   return (
     <div className="flex gap-2 items-center mt-6 px-6 lg:px-36">
+      {/* First Section */}
       <div className="w-[60%]">
-        <ThumbnailSingle
+        <ThumbnailCard
           color={{
             primaryColor: "bg-[#A8E1E4]",
             secondColor: "bg-[#49A9AE]",
@@ -22,6 +24,7 @@ const Thumbnail = () => {
           height="h-[110px] md:h-[160px] lg:h-[200px]"
           childrenClassName="pt-2 lg:pt-5 pr-7 md:pr-16"
         >
+          {/* Content for the first ThumbnailCard */}
           <>
             <h3 className="font-italianno text-[12px] md:text-[20px] lg:text-[30px] pr-5 md:pr-9">
               Furniture
@@ -33,11 +36,12 @@ const Thumbnail = () => {
               Order Now
             </button>
           </>
-        </ThumbnailSingle>
+        </ThumbnailCard>
       </div>
 
+      {/* Second Section */}
       <div className="w-[40%] space-y-2">
-        <ThumbnailSingle
+        <ThumbnailCard
           color={{
             primaryColor: "bg-[#FFCDA7] pt-[7px] lg:pt-[13px]",
             secondColor: "bg-[#EEA874]",
@@ -52,6 +56,7 @@ const Thumbnail = () => {
           height="h-[50px] md:h-[75px] lg:h-[95px]"
           childrenClassName="!text-center ml-3 pl-9 pt-1 w-[75%]"
         >
+          {/* Content for the second ThumbnailCard */}
           <>
             <h3 className="font-italianno text-[8px] md:text-[15px] lg:text-[20px]">
               Furniture
@@ -61,10 +66,10 @@ const Thumbnail = () => {
               Order Now
             </button>
           </>
-        </ThumbnailSingle>
+        </ThumbnailCard>
 
         <div className="h-[50%]">
-          <ThumbnailSingle
+          <ThumbnailCard
             color={{
               primaryColor: "bg-[#E2FBB2]",
               secondColor: "bg-[#B9DB75]",
@@ -79,6 +84,7 @@ const Thumbnail = () => {
             childrenClassName="!pt-1"
             height="h-[50px] md:h-[75px] lg:h-[95px]"
           >
+            {/* Content for the third ThumbnailCard */}
             <>
               <h3 className="font-italianno text-[10px] md:text-[15px] lg:text-[20px]">
                 Home Comfort
@@ -87,7 +93,7 @@ const Thumbnail = () => {
                 Order Now
               </button>
             </>
-          </ThumbnailSingle>
+          </ThumbnailCard>
         </div>
       </div>
     </div>
