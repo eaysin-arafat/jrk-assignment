@@ -19,7 +19,7 @@ const Thumbnail = () => {
             }}
             image={{
               alt: "big sail",
-              url: "/public/thumbnail/big-sail.png",
+              url: "/thumbnail/big-sail.png",
               width: w768 ? "95" : w1024 ? "180" : "200",
               imageClassName: "ml-1 md:ml-8 lg:ml-10",
             }}
@@ -51,7 +51,7 @@ const Thumbnail = () => {
             primaryColorWidth="w-[25%]"
             image={{
               alt: "big sail",
-              url: "/public/thumbnail/big-sail.png",
+              url: "/thumbnail/big-sail.png",
               width: w768 ? "55" : w1024 ? "90" : "110",
               imageClassName: "!bottom-1 md:ml-10",
             }}
@@ -78,7 +78,7 @@ const Thumbnail = () => {
               }}
               image={{
                 alt: "big sail",
-                url: "/public/thumbnail/home-confort.png",
+                url: "/thumbnail/home-confort.png",
                 width: w768 ? "70" : w1024 ? "90" : "120",
                 imageClassName: "!bottom-[2px] md:ml-[30px] items-center",
               }}
