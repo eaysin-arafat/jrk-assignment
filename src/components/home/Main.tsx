@@ -1,8 +1,8 @@
-import Blog from "../Blog";
-import Hero from "../Hero";
-import ProductAds from "../ProductAds";
-import Products from "../Products";
-import Thumbnail from "../Thumbnails";
+import Blog from "../section/Blog";
+import Hero from "../section/Hero";
+import ProductAds from "../section/ProductAds";
+import Products from "../section/Products";
+import Thumbnail from "../section/Thumbnails";
 
 const Main = () => {
   return (

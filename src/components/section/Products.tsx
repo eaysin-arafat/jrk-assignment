@@ -1,8 +1,9 @@
-import ProductCard from "./card/ProductCard";
-import Heading from "./heading/Heading";
+import HorizontalPaddingLayout from "../../layout/HorizontalPaddingLayout";
+import ProductCard from "../card/ProductCard";
+import Heading from "../heading/Heading";
 const Products = () => {
   return (
-    <div className="mt-4 px-6 lg:px-36">
+    <HorizontalPaddingLayout className="mt-4">
       {/* Heading */}
       <div className="text-center mb-2 lg:my-8">
         <Heading
@@ -54,7 +55,7 @@ const Products = () => {
           title="Front view Chair"
         />
       </div>
-    </div>
+    </HorizontalPaddingLayout>
   );
 };
 

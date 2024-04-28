@@ -54,7 +54,7 @@ body {
   }
 
   .primary-btn {
-    @apply bg-greenBgColor text-whiteColor px-1 py-[2px] rounded-sm text-[4px] md:text-[7px] lg:text-[9px] font-semibold inner-shadow;
+    @apply bg-greenBgColor hover:bg-[#3b6a59] text-whiteColor px-1 py-[2px] rounded-sm text-[4px] md:text-[7px] lg:text-[9px] font-semibold inner-shadow transition-all;
   }
 
   .thamnail-btn {

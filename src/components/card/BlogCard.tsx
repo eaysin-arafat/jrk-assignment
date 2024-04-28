@@ -8,7 +8,7 @@ const BlogCard = ({ title, image, metaData }: Props) => {
   return (
     <div>
       {/* Blog post image */}
-      <img src={image} width="" alt="" className="object-fill mb-[3px]" />
+      <img src={image} alt="Blog image" className="mb-[3px]" />
 
       {/* Blog post title */}
       <h1 className="text-[7px] md:text-[11px] lg:text-[13px]">{title}</h1>

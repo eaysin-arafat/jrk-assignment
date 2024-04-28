@@ -1,4 +1,5 @@
 import useWindow from "../../hooks/useWindow";
+import HorizontalPaddingLayout from "../../layout/HorizontalPaddingLayout";
 
 const Navbar = () => {
   // Using the useWindow hook to track window width breakpoints
@@ -6,7 +7,7 @@ const Navbar = () => {
   const w768 = useWindow(768); // Boolean indicating if the window width is 768px or more
 
   return (
-    <div className="flex justify-between px-6 lg:px-36 my-3">
+    <HorizontalPaddingLayout className="flex justify-between my-3">
       {/* Logo */}
       <img
         src="/icons/icon.png"
@@ -20,7 +21,7 @@ const Navbar = () => {
           <li>Home</li>
           <li>Products</li>
           <li>Service</li>
-          <li className="bg-greenBgColor px-2.5 rounded-full text-whiteColor py-[2px]">
+          <li className="bg-greenBgColor hover:bg-[#3b6a59] px-2.5 rounded-full text-whiteColor py-[2px] transition-all pt-[3px]">
             Login
           </li>
         </ul>
@@ -38,7 +39,7 @@ const Navbar = () => {
           </span>
         </div>
       </div>
-    </div>
+    </HorizontalPaddingLayout>
   );
 };
 

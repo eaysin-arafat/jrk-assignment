@@ -31,7 +31,7 @@ const ProductCard = ({ title, image, price, stars }: Props) => {
           <p className="text font-semibold">${price}</p>
 
           {/* Buy button */}
-          <button className="text font-semibold bg-orangeColor text-black px-1 pt-[2px] rounded-sm">
+          <button className="text font-semibold bg-orangeColor hover:bg-[#e0b216] text-black px-1 pt-[2px] my-1 rounded-sm transition-all">
             Buy Now
           </button>
         </div>

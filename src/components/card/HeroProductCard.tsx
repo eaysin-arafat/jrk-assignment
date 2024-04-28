@@ -1,4 +1,4 @@
-import useWindow from "../../hooks/useWindow"; 
+import useWindow from "../../hooks/useWindow";
 
 const HeroProductCard = ({
   title,
@@ -15,8 +15,8 @@ const HeroProductCard = ({
     <div className="bg-gradient-to-b from-[#BDEFDE] to-[#70CEB1] px-2 pt-2 rounded-xl flex flex-col items-center justify-between">
       {/* Product image */}
       <img
-        style={{ height: w768 ? "18px" : "70px" }}
-        width={w768 ? "30" : w1024 ? "70" : "80"}
+        style={{ height: w768 ? "10px" : "50px" }}
+        width={w768 ? "25" : w1024 ? "50" : "60"}
         src={image}
         className="flex items-center justify-end"
         alt=""
