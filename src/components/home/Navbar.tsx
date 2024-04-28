@@ -18,9 +18,9 @@ const Navbar = () => {
       <div className="flex items-center gap-2.5 md:gap-5">
         {/* Navigation links */}
         <ul className="flex items-center justify-center gap-2 md:gap-5 capitalize font-medium text-[7px] md:text-[9px] lg:text-[11px]">
-          <li>Home</li>
-          <li>Products</li>
-          <li>Service</li>
+          <li className="hover:text-greenTextColor cursor-pointer">Home</li>
+          <li className="hover:text-greenTextColor cursor-pointer">Products</li>
+          <li className="hover:text-greenTextColor cursor-pointer">Service</li>
           {/* Navbar active link */}
           <li className="bg-greenBgColor hover:bg-[#3b6a59] px-2 rounded-full text-whiteColor py-[1px] transition-all pt-[2px]">
             Login
