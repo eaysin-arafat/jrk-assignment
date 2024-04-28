@@ -61,7 +61,7 @@ const ProductAds = () => {
                 className="pb-[2.5px]"
                 alt=""
               />
-              Watch Video
+              <span className="mb-[2px] md:mb-[1px]">Watch Video</span>
             </button>
           </div>
         </div>

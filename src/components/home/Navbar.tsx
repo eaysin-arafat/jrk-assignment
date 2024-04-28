@@ -11,7 +11,7 @@ const Navbar = () => {
       {/* Logo */}
       <img
         src="/icons/icon.png"
-        width={w768 ? "35" : w1024 ? "40" : "45"} // Dynamic width based on window width
+        width={w768 ? "40" : w1024 ? "50" : "55"} // Dynamic width based on window width
         alt=""
       />
 

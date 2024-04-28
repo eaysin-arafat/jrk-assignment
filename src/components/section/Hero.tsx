@@ -47,7 +47,7 @@ const Hero = () => {
                 width={w768 ? "7" : "10"} // Dynamic width based on window width
                 alt=""
               />
-              All Product
+              <span className="mt-[2px] md:mt-[1px]">All Product</span>
             </button>
           </HorizontalPaddingLayout>
         </div>
