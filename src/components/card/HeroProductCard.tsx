@@ -12,13 +12,13 @@ const HeroProductCard = ({
   const w768 = useWindow(768);
 
   return (
-    <div className="bg-gradient-to-b from-[#BDEFDE] to-[#70CEB1] px-2 pt-2 rounded-xl flex flex-col items-center justify-between">
+    <div className="bg-gradient-to-b from-[#BDEFDE] to-[#70CEB1] px-2 pt-2 py-2 rounded-xl flex flex-col items-center justify-between">
       {/* Product image */}
       <img
-        style={{ height: w768 ? "10px" : "50px" }}
-        width={w768 ? "25" : w1024 ? "50" : "60"}
+        style={{ height: w768 ? "10px" : "60px" }}
+        width={w768 ? "25" : w1024 ? "75" : "80"}
         src={image}
-        className="flex items-center justify-end"
+        className="flex items-center justify-end lg:px-3 lg:py-1"
         alt=""
       />
 

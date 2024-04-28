@@ -7,7 +7,7 @@ const SectionLayout = ({
   children: ReactNode;
   className?: string;
 }) => {
-  return <div className={`px-5 lg:px-56 ${className}`}>{children}</div>;
+  return <div className={`px-5 lg:px-44 ${className}`}>{children}</div>;
 };
 
 export default SectionLayout;

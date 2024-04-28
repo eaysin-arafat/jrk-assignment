@@ -40,11 +40,11 @@ const Hero = () => {
           {/* Buttons */}
           <SectionLayout className="bg-orangeColor flex items-center gap-1 md:gap-2 py-5 lg:py-8">
             <button className="primary-btn">Buy Now</button>
-            <button className="flex items-center justify-center gap-1  text font-semibold">
+            <button className="flex items-center justify-center gap-1.5  text font-semibold">
               <img
                 src="/icons/redirect.png"
                 className="text-whiteColor bg-whiteColor p-[1px] rounded-sm"
-                width={w768 ? "7" : "10"} // Dynamic width based on window width
+                width={w768 ? "7" : "14"} // Dynamic width based on window width
                 alt=""
               />
               <span className="mt-[2px] md:mt-[1px]">All Product</span>
@@ -55,9 +55,9 @@ const Hero = () => {
         {/* Image */}
         <div>
           <img
-            className="absolute top-0 right-6 lg:right-56"
+            className="absolute top-0 right-6 lg:right-44"
             src="/hero/hero-bg.png"
-            width={w768 ? "110" : w1024 ? "130" : "150"} // Dynamic width based on window width
+            width={w768 ? "110" : w1024 ? "130" : "190"} // Dynamic width based on window width
             alt=""
           />
         </div>

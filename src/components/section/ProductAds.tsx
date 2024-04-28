@@ -9,29 +9,35 @@ const ProductAds = () => {
 
   return (
     <SectionLayout>
-      <div className="flex items-center gap-4 lg:gap-16 py-4">
+      <div className="flex items-center gap-4 lg:gap-5 py-4">
         {/* Product main image */}
-        <div className="">
-          <ProductBg className="!bg-[#CFE9E1]">
-            <div className="">
-              <img src="/show/image.png" width="450" alt="" />
-            </div>
-          </ProductBg>
-        </div>
+        <div className="flex gap-4 lg:gap-5">
+          <div className="">
+            <ProductBg className="!bg-[#CFE9E1]">
+              <div className="">
+                <img src="/show/image.png" width="450" alt="" />
+              </div>
+            </ProductBg>
+          </div>
 
-        {/* Product lists */}
-        <div className="flex flex-col gap-2 ">
-          <ProductBg className="!bg-[#CFE9E1] !py-2.5">
-            <img src="/show/image01.png" width="140" alt="" />
-          </ProductBg>
+          {/* Product lists */}
+          <div className="flex flex-col gap-2 lg:[w-80%]">
+            <ProductBg className="!bg-[#CFE9E1] !py-2.5">
+              <img
+                src="/show/image01.png"
+                width={w1024 ? "140" : "180"}
+                alt=""
+              />
+            </ProductBg>
 
-          <ProductBg className="!bg-[#CFE9E1]">
-            <img src="/show/image02.png" width={"140"} alt="" />
-          </ProductBg>
+            <ProductBg className="!bg-[#CFE9E1]">
+              <img src="/show/image02.png" width={"140"} alt="" />
+            </ProductBg>
 
-          <ProductBg className="!bg-[#CFE9E1]">
-            <img src="/show/image03.png" width="140" alt="" />
-          </ProductBg>
+            <ProductBg className="!bg-[#CFE9E1]">
+              <img src="/show/image03.png" width="140" alt="" />
+            </ProductBg>
+          </div>
         </div>
 
         {/* Product description */}
@@ -54,10 +60,10 @@ const ProductAds = () => {
           {/* Buttons */}
           <div className="flex items-center gap-2 mt-2">
             <button className="primary-btn">Shop Now</button>
-            <button className="text flex items-center gap-[2px] pt-1">
+            <button className="text flex items-center gap-[2px] pt-1 font-medium">
               <img
                 src="/icons/video-play.png"
-                width={w768 ? "5" : w1024 ? "10" : "13"}
+                width={w768 ? "5" : w1024 ? "15" : "20"}
                 className="pb-[2.5px]"
                 alt=""
               />

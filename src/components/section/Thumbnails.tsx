@@ -23,7 +23,7 @@ const Thumbnail = () => {
               width: w768 ? "95" : w1024 ? "180" : "200",
               imageClassName: "ml-1 md:ml-8 lg:ml-10",
             }}
-            height="h-[110px] md:h-[160px] lg:h-[200px]"
+            height="h-[110px] md:h-[160px] lg:h-[260px]"
             childrenClassName="pt-2 lg:pt-5 pr-7 md:pr-16"
           >
             {/* Content for the first ThumbnailCard */}
@@ -34,7 +34,7 @@ const Thumbnail = () => {
               <h2 className="font-italianno text-[18px] md:text-[25px] lg:text-[38px] mt-[-6px]">
                 Big Sale
               </h2>
-              <button className="inner-shadow-thamnail text font-semibold px-2 md:px-3 pt-[3px] py-[2px] rounded-full transform translate-y-[-8px] md:translate-y-[0px]">
+              <button className="inner-shadow-thamnail text font-semibold px-2 lg:px-4 md:px-3 pt-[3px] py-[2px] rounded-full transform translate-y-[-8px] md:translate-y-[0px]">
                 Order Now
               </button>
             </>
@@ -45,17 +45,17 @@ const Thumbnail = () => {
         <div className="w-[40%] space-y-2">
           <ThumbnailCard
             color={{
-              primaryColor: "bg-[#FFCDA7] pt-[7px] lg:pt-[13px]",
+              primaryColor: "bg-[#FFCDA7]",
               secondColor: "bg-[#EEA874]",
             }}
             primaryColorWidth="w-[25%]"
             image={{
               alt: "big sail",
               url: "/thumbnail/big-sail.png",
-              width: w768 ? "55" : w1024 ? "90" : "110",
-              imageClassName: "!bottom-1 md:ml-10",
+              width: w768 ? "55" : w1024 ? "90" : "130",
+              imageClassName: "!bottom-1 md:ml-10 ",
             }}
-            height="h-[50px] md:h-[75px] lg:h-[95px]"
+            height="h-[50px] md:h-[75px] lg:h-[125px]"
             childrenClassName="!text-center ml-3 pl-9 pt-1 w-[75%]"
           >
             {/* Content for the second ThumbnailCard */}
@@ -79,12 +79,12 @@ const Thumbnail = () => {
               image={{
                 alt: "big sail",
                 url: "/thumbnail/home-confort.png",
-                width: w768 ? "70" : w1024 ? "90" : "120",
+                width: w768 ? "70" : w1024 ? "90" : "155",
                 imageClassName: "!bottom-[2px] md:ml-[30px] items-center",
               }}
               primaryColorWidth="w-[50%]"
               childrenClassName="!pt-1 md:pr-7"
-              height="h-[50px] md:h-[75px] lg:h-[95px]"
+              height="h-[50px] md:h-[75px] lg:h-[125px]"
             >
               {/* Content for the third ThumbnailCard */}
               <>

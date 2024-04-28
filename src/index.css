@@ -46,7 +46,7 @@ body {
 
 @layer components {
   .heading {
-    @apply text-[15px] md:text-[18px] lg:text-[20px] font-semibold;
+    @apply text-[15px] md:text-[20px] lg:text-[25px] font-semibold;
   }
 
   .heading-primary {
@@ -54,19 +54,19 @@ body {
   }
 
   .text {
-    @apply text-[5px] md:text-[9px] lg:text-[11px];
+    @apply text-[5px] md:text-[9px] lg:text-[14px];
   }
 
   .primary-btn {
-    @apply bg-greenBgColor hover:bg-[#3b6a59] text-whiteColor px-1 py-[2px] rounded-sm text-[4px] md:text-[7px] lg:text-[9px] font-semibold inner-shadow transition-all;
+    @apply bg-greenBgColor hover:bg-[#3b6a59] text-whiteColor px-1 lg:px-3 py-[2px] lg:py-1 rounded-[3px] text-[4px] md:text-[9px] lg:text-[12px] font-semibold inner-shadow transition-all;
   }
 
   .thamnail-btn {
-    @apply font-semibold text-[3px] md:text-[5px] lg:text-[7px] px-[4px] md:px-[6px] pt-1 md:pt-[2px] py-[1px] rounded-full transform translate-y-[-9px];
+    @apply font-semibold text-[3px] md:text-[8px] lg:text-[11px] px-[4px] md:px-3 pt-1 md:pt-[2px] py-[1px] rounded-full transform translate-y-[-9px];
   }
 
   .footerOptionLine {
-    @apply w-[1px] h-[6px] md:h-[8px] lg:h-[10px] bg-whiteColor;
+    @apply w-[1px] h-[6px] md:h-[11px] lg:h-[15px] bg-whiteColor;
   }
 }
 
