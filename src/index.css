@@ -62,7 +62,7 @@ body {
   }
 
   .thamnail-btn {
-    @apply font-semibold text-[3px] md:text-[5px] lg:text-[7px] px-[4px] md:px-[6px] pt-[1px] md:pt-[2px] py-[1px] rounded-full transform translate-y-[-9px];
+    @apply font-semibold text-[3px] md:text-[5px] lg:text-[7px] px-[4px] md:px-[6px] pt-[2px] md:pt-[2px] py-[1px] rounded-full transform translate-y-[-9px];
   }
 
   .footerOptionLine {
