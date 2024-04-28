@@ -1,5 +1,5 @@
 import useWindow from "../../hooks/useWindow";
-import HorizontalPaddingLayout from "../../layout/HorizontalPaddingLayout";
+import SectionLayout from "../../layout/SectionLayout";
 
 const Navbar = () => {
   // Using the useWindow hook to track window width breakpoints
@@ -7,7 +7,7 @@ const Navbar = () => {
   const w768 = useWindow(768);
 
   return (
-    <HorizontalPaddingLayout className="flex justify-between my-3">
+    <SectionLayout className="flex justify-between my-3">
       {/* Logo */}
       <img
         src="/icons/icon.png"
@@ -40,7 +40,7 @@ const Navbar = () => {
           </span>
         </div>
       </div>
-    </HorizontalPaddingLayout>
+    </SectionLayout>
   );
 };
 

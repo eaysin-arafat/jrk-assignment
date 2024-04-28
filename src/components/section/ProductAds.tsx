@@ -1,5 +1,5 @@
 import useWindow from "../../hooks/useWindow";
-import HorizontalPaddingLayout from "../../layout/HorizontalPaddingLayout";
+import SectionLayout from "../../layout/SectionLayout";
 import ProductBg from "../shared/ProductBg";
 
 const ProductAds = () => {
@@ -8,7 +8,7 @@ const ProductAds = () => {
   const w768 = useWindow(768);
 
   return (
-    <HorizontalPaddingLayout>
+    <SectionLayout>
       <div className="flex items-center gap-4 lg:gap-16 py-4">
         {/* Product main image */}
         <div className="">
@@ -66,7 +66,7 @@ const ProductAds = () => {
           </div>
         </div>
       </div>
-    </HorizontalPaddingLayout>
+    </SectionLayout>
   );
 };
 

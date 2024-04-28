@@ -1,5 +1,5 @@
 import useWindow from "../../hooks/useWindow";
-import HorizontalPaddingLayout from "../../layout/HorizontalPaddingLayout";
+import SectionLayout from "../../layout/SectionLayout";
 import HeroProductCard from "../card/HeroProductCard";
 import Heading from "../heading/Heading";
 
@@ -14,7 +14,7 @@ const Hero = () => {
       <div className="flex relative bg-gradient-to-r from-[#FFE481] via-[#FFE173] to-[#FFD63F] pt-3">
         <div className="">
           {/* Text content */}
-          <HorizontalPaddingLayout>
+          <SectionLayout>
             <div className="pb-3 w-[62%] md:w-[75%] lg:py-5">
               {/* Heading */}
               <Heading
@@ -35,10 +35,10 @@ const Hero = () => {
                 quality crafted Sofas that suit your needs best.
               </p>
             </div>
-          </HorizontalPaddingLayout>
+          </SectionLayout>
 
           {/* Buttons */}
-          <HorizontalPaddingLayout className="bg-orangeColor flex items-center gap-1 md:gap-2 py-5 lg:py-8">
+          <SectionLayout className="bg-orangeColor flex items-center gap-1 md:gap-2 py-5 lg:py-8">
             <button className="primary-btn">Buy Now</button>
             <button className="flex items-center justify-center gap-1  text font-semibold">
               <img
@@ -49,7 +49,7 @@ const Hero = () => {
               />
               <span className="mt-[2px] md:mt-[1px]">All Product</span>
             </button>
-          </HorizontalPaddingLayout>
+          </SectionLayout>
         </div>
 
         {/* Image */}

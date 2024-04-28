@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 
-const HorizontalPaddingLayout = ({
+const SectionLayout = ({
   children,
   className,
 }: {
@@ -10,4 +10,4 @@ const HorizontalPaddingLayout = ({
   return <div className={`px-5 lg:px-56 ${className}`}>{children}</div>;
 };
 
-export default HorizontalPaddingLayout;
+export default SectionLayout;

@@ -1,9 +1,9 @@
-import HorizontalPaddingLayout from "../../layout/HorizontalPaddingLayout";
+import SectionLayout from "../../layout/SectionLayout";
 import ProductCard from "../card/ProductCard";
 import Heading from "../heading/Heading";
 const Products = () => {
   return (
-    <HorizontalPaddingLayout className="mt-4">
+    <SectionLayout className="mt-4">
       {/* Heading */}
       <div className="text-center mb-2 lg:my-8">
         <Heading
@@ -55,7 +55,7 @@ const Products = () => {
           title="Front view Chair"
         />
       </div>
-    </HorizontalPaddingLayout>
+    </SectionLayout>
   );
 };
 

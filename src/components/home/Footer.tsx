@@ -1,5 +1,5 @@
 import useWindow from "../../hooks/useWindow";
-import HorizontalPaddingLayout from "../../layout/HorizontalPaddingLayout";
+import SectionLayout from "../../layout/SectionLayout";
 import SocialIcon from "../btn/SocialIcon";
 
 const Footer = () => {
@@ -8,7 +8,7 @@ const Footer = () => {
   const w768 = useWindow(768); // Boolean indicating if the window width is 768px or more
 
   return (
-    <HorizontalPaddingLayout className="bg-greenTextColor text-whiteColor py-2 pb-4">
+    <SectionLayout className="bg-greenTextColor text-whiteColor py-2 pb-4">
       {/* Footer navigation links */}
       <ul className="flex items-center justify-center gap-1 text font-medium">
         <li>Privacy Policy</li>
@@ -65,7 +65,7 @@ const Footer = () => {
           © 2022 Designed & Developed by Kabbik
         </p>
       </div>
-    </HorizontalPaddingLayout>
+    </SectionLayout>
   );
 };
 

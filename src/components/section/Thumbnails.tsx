@@ -1,5 +1,5 @@
 import useWindow from "../../hooks/useWindow";
-import HorizontalPaddingLayout from "../../layout/HorizontalPaddingLayout";
+import SectionLayout from "../../layout/SectionLayout";
 import ThumbnailCard from "../card/ThumbnailCard";
 
 const Thumbnail = () => {
@@ -8,7 +8,7 @@ const Thumbnail = () => {
   const w768 = useWindow(768);
 
   return (
-    <HorizontalPaddingLayout>
+    <SectionLayout>
       <div className="flex gap-2 items-center mt-6">
         {/* First Section */}
         <div className="w-[60%]">
@@ -99,7 +99,7 @@ const Thumbnail = () => {
           </div>
         </div>
       </div>
-    </HorizontalPaddingLayout>
+    </SectionLayout>
   );
 };
 

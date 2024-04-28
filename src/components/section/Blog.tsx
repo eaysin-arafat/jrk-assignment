@@ -1,10 +1,10 @@
-import HorizontalPaddingLayout from "../../layout/HorizontalPaddingLayout";
+import SectionLayout from "../../layout/SectionLayout";
 import BlogCard from "../card/BlogCard";
 import Heading from "../heading/Heading";
 
 const Blog = () => {
   return (
-    <HorizontalPaddingLayout>
+    <SectionLayout>
       <div className="py-4 pt-0">
         {/* Heading for the blog section */}
         <Heading blackText="Our" greenText="Blog" />
@@ -36,7 +36,7 @@ const Blog = () => {
           />
         </div>
       </div>
-    </HorizontalPaddingLayout>
+    </SectionLayout>
   );
 };
 
