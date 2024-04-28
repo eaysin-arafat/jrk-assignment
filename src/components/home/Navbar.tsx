@@ -7,7 +7,7 @@ const Navbar = () => {
   const w768 = useWindow(768);
 
   return (
-    <SectionLayout className="flex justify-between my-3">
+    <SectionLayout className="flex justify-between my-3 lg:my-4">
       {/* Logo */}
       <img
         src="/icons/icon.png"
@@ -35,7 +35,7 @@ const Navbar = () => {
             alt=""
           />
           {/* Cart counter */}
-          <span className="absolute top-0 right-0 h-1.5 w-1.5 bg-greenBgColor rounded-full text-white text-[4px] flex items-center justify-center">
+          <span className="absolute top-0 lg:top-[-3px] right-0 h-1.5 md:h-2 lg:h-2.5 w-1.5 md:w-2 lg:w-2.5 bg-greenBgColor rounded-full text-white text-1 md:text-[5px] lg:text-[6px] flex items-center justify-center">
             0
           </span>
         </div>
