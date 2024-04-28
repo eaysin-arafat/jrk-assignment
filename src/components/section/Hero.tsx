@@ -15,7 +15,7 @@ const Hero = () => {
         <div className="">
           {/* Text content */}
           <HorizontalPaddingLayout>
-            <div className="pb-3 w-[68%] md:w-[75%] lg:py-5">
+            <div className="pb-3 w-[62%] md:w-[75%] lg:py-5">
               {/* Heading */}
               <Heading
                 blackText="We"

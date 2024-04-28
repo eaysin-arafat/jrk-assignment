@@ -5,7 +5,7 @@ import Heading from "../heading/Heading";
 const Blog = () => {
   return (
     <HorizontalPaddingLayout>
-      <div className="py-4 pt-2">
+      <div className="py-4 pt-0">
         {/* Heading for the blog section */}
         <Heading blackText="Our" greenText="Blog" />
 
